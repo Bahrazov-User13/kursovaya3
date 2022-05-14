@@ -18,10 +18,13 @@ public class LoginFrame extends JFrame implements ActionListener {
 	
 	LoginFrame()
 	{
-	//Calling setLayoutManger() method inside the constructor.
+	// Вызов методов внутри конструктора.
 	setLayoutManager();
+	setLocationAndSize();
+	addComponentsToContainer();
 
 	}
+	
 	public void setLayoutManager()
 	{
 	//Setting layout manager of Container to null
