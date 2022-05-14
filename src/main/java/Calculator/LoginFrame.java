@@ -8,7 +8,14 @@ import java.awt.event.ActionListener;
 public class LoginFrame extends JFrame implements ActionListener {
 
 	Container container=getContentPane();
-
+	JLabel userLabel=new JLabel("Имя пользователя");
+	JLabel passwordLabel=new JLabel("Пароль");
+	JTextField userTextField=new JTextField();
+	JPasswordField passwordField=new JPasswordField();
+	JButton loginButton=new JButton("Авторизоваться");
+	JButton resetButton=new JButton("Сброс");
+	JCheckBox showPassword=new JCheckBox("Показать пароль");
+	
 	LoginFrame()
 	{
 	//Calling setLayoutManger() method inside the constructor.
