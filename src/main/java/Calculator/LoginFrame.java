@@ -38,6 +38,17 @@ public class LoginFrame extends JFrame implements ActionListener {
 
 
 	}
+	public void addComponentsToContainer()
+	{
+	// Добавление каждого компонента в контейнер
+	container.add(userLabel);
+	container.add(passwordLabel);
+	container.add(userTextField);
+	container.add(PasswordField);
+	container.add(showPassword);
+	container.add(LoginButton);
+	container.add(resetButton);
+	}
 	
 	public void setLayoutManager()
 	{
