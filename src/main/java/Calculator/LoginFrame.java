@@ -7,16 +7,23 @@ import java.awt.event.ActionListener;
 //Creating LoginFrame class
 public class LoginFrame extends JFrame implements ActionListener {
 
+	Container container=getContentPane();
 
-//Creating constructor of LoginFrame() class
-LoginFrame()
-{
+	LoginFrame()
+	{
+	//Calling setLayoutManger() method inside the constructor.
+	setLayoutManager();
 
-}
+	}
+	public void setLayoutManager()
+	{
+	//Setting layout manager of Container to null
+	container.setLayout(null);
+	}
 
-//Overriding actionPerformed() method
-@Override
-public void actionPerformed(ActionEvent e) {
 
-}
-}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+	}
+	}
