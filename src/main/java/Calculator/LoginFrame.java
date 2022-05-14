@@ -52,7 +52,13 @@ public class LoginFrame extends JFrame implements ActionListener {
 	container.add(loginButton);
 	container.add(resetButton);
 	}
-
+	public void addActionEvent()
+	{
+	// добавление прослушивателя действий в компоненты
+	LoginButton.addActionListener(this);
+	resetButton.addActionListener(this);
+	showPassword.addActionListener(this);
+	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
