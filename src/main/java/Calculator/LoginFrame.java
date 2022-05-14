@@ -18,42 +18,39 @@ public class LoginFrame extends JFrame implements ActionListener {
 	
 	LoginFrame()
 	{
-	// Вызов методов внутри конструктора.
+	//Calling methods inside constructor.
 	setLayoutManager();
 	setLocationAndSize();
 	addComponentsToContainer();
 
 	}
-	
+	public void setLayoutManager()
+	{
+	container.setLayout(null);
+	}
 	public void setLocationAndSize()
 	{
-	// Настройка местоположения и размера каждого компонента с помощью метода setBounds ().
+	//Setting location and Size of each components using setBounds() method.
 	userLabel.setBounds(50,150,100,30);
 	passwordLabel.setBounds(50,220,100,30);
 	userTextField.setBounds(150,150,150,30);
-	PasswordField.setBounds(150,220,150,30);
+	passwordField.setBounds(150,220,150,30);
 	showPassword.setBounds(150,250,150,30);
-	LoginButton.setBounds(50,300,100,30);
+	loginButton.setBounds(50,300,100,30);
 	resetButton.setBounds(200,300,100,30);
 
 
 	}
 	public void addComponentsToContainer()
 	{
-	// Добавление каждого компонента в контейнер
+	//Adding each components to the Container
 	container.add(userLabel);
 	container.add(passwordLabel);
 	container.add(userTextField);
-	container.add(PasswordField);
+	container.add(passwordField);
 	container.add(showPassword);
-	container.add(LoginButton);
+	container.add(loginButton);
 	container.add(resetButton);
-	}
-	
-	public void setLayoutManager()
-	{
-	//Setting layout manager of Container to null
-	container.setLayout(null);
 	}
 
 
@@ -61,4 +58,4 @@ public class LoginFrame extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 
 	}
-	}
+	} 
