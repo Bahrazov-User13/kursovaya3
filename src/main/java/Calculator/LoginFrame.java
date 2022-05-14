@@ -22,7 +22,7 @@ public class LoginFrame extends JFrame implements ActionListener {
 	setLayoutManager();
 	setLocationAndSize();
 	addComponentsToContainer();
-
+	addActionEvent();// вызов метода addActionEvent()
 	}
 	public void setLayoutManager()
 	{
