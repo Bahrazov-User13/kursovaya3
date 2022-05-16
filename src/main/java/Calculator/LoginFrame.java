@@ -13,7 +13,7 @@ JLabel userLabel=new JLabel("Имя пользователя");
 JLabel passwordLabel=new JLabel("Пароль");
 JTextField userTextField=new JTextField();
 JPasswordField passwordField=new JPasswordField();
-JButton loginButton=new JButton("Авторизоваться");
+JButton loginButton=new JButton("Авторизоваться cv");
 JButton resetButton=new JButton("Сброс");
 JCheckBox showPassword=new JCheckBox("Показать пароль");
 
